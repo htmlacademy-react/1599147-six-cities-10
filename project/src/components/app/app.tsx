@@ -5,7 +5,7 @@ type AppPropsTypes = {
  }
 
 function App({ placesCount }: AppPropsTypes): JSX.Element {
-  // return <p>Hello, world!</p>;
+
   return (
     <MainPage placesCount = { placesCount } />
   );

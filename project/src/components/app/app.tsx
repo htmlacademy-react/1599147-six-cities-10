@@ -6,6 +6,7 @@ import Login from '../../pages/login/login';
 import Property from '../../pages/property/property';
 import ErrorPage from '../../pages/error-page/error-page';
 import PrivateRoute from '../../components/private-route/private-route';
+import LoginRoute from '../../components/login-route/login-route';
 
 type AppPropsTypes = {
    placesCount: number;
@@ -17,9 +18,15 @@ function App({ placesCount }: AppPropsTypes): JSX.Element {
     <BrowserRouter>
       <Routes>
         <Route path={AppRoute.Main} element={<MainPage placesCount={placesCount} />} />
-        <Route path={AppRoute.Login} element={<Login />} />
+        <Route path={AppRoute.Login}
+          element={
+            <LoginRoute authorizationStatus={AuthorizationStatus.NoAuth}>
+              <Login />
+            </LoginRoute>
+          }
+        />
         <Route path={AppRoute.Error} element={<ErrorPage />} />
-        <Route path={AppRoute.Room} element={<Property />} />
+        <Route path={AppRoute.Offer} element={<Property />} />
         <Route path={AppRoute.Favorites}
           element={
             <PrivateRoute

@@ -3,7 +3,7 @@ export enum AppRoute {
   Error = '/404',
   Favorites = '/favorites',
   Main = '/',
-  Room = '/offer/:id ',
+  Offer = '/offer',
 }
 
 export enum AuthorizationStatus {

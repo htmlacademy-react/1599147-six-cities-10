@@ -1,12 +1,12 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import { AppRoute, AuthorizationStatus } from '../../config';
-import MainPage from '../../pages/main-page/main-page';
+import ErrorPage from '../../pages/error-page/error-page';
 import Favorites from '../../pages/favorites/favorites';
 import Login from '../../pages/login/login';
-import Property from '../../pages/property/property';
-import ErrorPage from '../../pages/error-page/error-page';
-import PrivateRoute from '../../components/private-route/private-route';
 import LoginRoute from '../../components/login-route/login-route';
+import MainPage from '../../pages/main-page/main-page';
+import PrivateRoute from '../../components/private-route/private-route';
+import Property from '../../pages/property/property';
 
 type AppPropsTypes = {
    placesCount: number;

@@ -1,5 +1,5 @@
-import PlaceCard from '../../components/place-card/place-card';
 import Logo from '../../components/logo/logo';
+import PlaceCard from '../../components/place-card/place-card';
 import SiteNav from '../../components/site-nav/site-nav';
 
 
